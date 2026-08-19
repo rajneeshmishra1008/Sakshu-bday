@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Sakshu! ❤️ To My Favorite Person</title>
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Dancing+Script:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Font Styles for Names & Captions -->
+  <style>
+    .friend-name {
+      font-family: 'Dancing Script', 'Alex Brush', cursive;
+      font-weight: 700;
+      color: #ff4d6d;
+    }
+    .your-name {
+      font-family: 'Alex Brush', cursive;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      color: #d4af37;
+    }
+    .handwritten-tag, .handwritten {
+      font-family: 'Dancing Script', cursive;
+    }
+  </style>
+
+  <!-- Libraries -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor (Desktop) -->
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Background Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- 1. INTRO / LOADING SCREEN -->
+  <section id="loading-screen" class="active">
+    <div class="intro-content">
+      <div class="message-container">
+        <p class="intro-msg step-1">I made something for someone very special...</p>
+        <p class="intro-msg step-2">Someone who makes ordinary days feel special.</p>
+        <p class="intro-msg step-3">This is for you, Sakshu. ❤️</p>
+      </div>
+      <button id="open-surprise-btn" class="magical-btn">
+        <span>Open Your Surprise</span>
+        <i class="fa-solid fa-heart"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main id="main-content">
+
+    <!-- 2. HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-container">
+        <div class="hero-image-wrapper" data-aos="zoom-in" data-aos-duration="1500">
+          <img src="sakshi.jpeg" alt="Sakshu's Photograph" class="hero-photo" id="hero-img">
+          <div class="hero-light-leak"></div>
+        </div>
+        <div class="hero-text" data-aos="fade-up" data-aos-delay="300">
+          <h1 class="hero-title">Happy Birthday, <span class="friend-name">Sakshu</span> ❤️</h1>
+          <p class="hero-subtitle">
+            To my best friend, my comfort zone,<br>
+            my safe place, and one of the most beautiful parts of my life.
+          </p>
+          <div class="scroll-indicator">
+            <p>Scroll down... there's a little story waiting for you, Sakshu.</p>
+            <i class="fa-solid fa-chevron-down bounce"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. THE GIRL BEHIND MY SMILES -->
+    <section id="photo-intro" class="section-padding">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up"><span class="friend-name">Sakshu</span> — The Girl Behind So Many Of My Smiles</h2>
+        <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="100">Capturing the light you bring everywhere you go.</p>
+
+        <div class="asymmetric-collage">
+          <div class="polaroid-card card-1" data-aos="fade-right" data-aos-delay="200">
+            <div class="polaroid-img-box">
+              <img src="sakshi10.jpeg" alt="Sakshu Moment 1">
+            </div>
+            <div class="polaroid-caption">
+              <span>"That smile ❤️"</span>
+              <small>Favorite Memories</small>
+            </div>
+          </div>
+
+          <div class="polaroid-card card-2" data-aos="fade-up" data-aos-delay="400">
+            <div class="polaroid-img-box">
+              <img src="sakshi15.jpeg" alt="Sakshu Moment 2">
+            </div>
+            <div class="polaroid-caption">
+              <span>"My favorite human."</span>
+              <small>Pure Happiness</small>
+            </div>
+          </div>
+
+          <div class="polaroid-card card-3" data-aos="fade-left" data-aos-delay="600">
+            <div class="polaroid-img-box">
+              <img src="sakshi9.jpeg" alt="Sakshu Moment 3">
+            </div>
+            <div class="polaroid-caption">
+              <span>"How are you this cute?"</span>
+              <small>Always Bright</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. OUR MEMORY TIMELINE -->
+<section id="timeline" class="section-padding">
+  <div class="container">
+    <h2 class="section-title text-center" data-aos="fade-up">Little Moments, Big Memories</h2>
+    <div class="timeline-wrapper">
+      <div class="timeline-line"></div>
+
+      <!-- Timeline Item 1 -->
+      <div class="timeline-item left" data-aos="fade-right">
+        <div class="timeline-content" style="background: #ffffff; padding: 20px; border-radius: 16px; box-shadow: 0 10px 30px rgba(74, 21, 37, 0.08); width: 100%; box-sizing: border-box; overflow: hidden;">
+          <div class="timeline-photo" style="width: 100%; height: auto; border-radius: 12px; overflow: hidden; margin-bottom: 15px; position: relative; background-color: #fceade;">
+            <img src="sakshi5.png" alt="The Beginning" style="width: 100%; height: auto; object-fit: cover; object-position: center; display: block; border-radius: 12px;">
+          </div>
+          <span class="timeline-date">Chapter I</span>
+          <h3>The Beginning</h3>
+          <p>"Somehow, a normal day turned into the beginning of something I never wanted to lose."</p>
+        </div>
+      </div>
+ 
+      <!-- Timeline Item 2 -->
+      <div class="timeline-item right" data-aos="fade-left">
+        <div class="timeline-content" style="background: #ffffff; padding: 20px; border-radius: 16px; box-shadow: 0 10px 30px rgba(74, 21, 37, 0.08); width: 100%; box-sizing: border-box; overflow: hidden;">
+          <div class="timeline-photo" style="width: 100%; height: auto; border-radius: 12px; overflow: hidden; margin-bottom: 15px; position: relative; background-color: #fceade;">
+            <img src="sakshi6.jpeg" alt="Conversations" style="width: 100%; height: auto; object-fit: cover; object-position: center; display: block; border-radius: 12px;">
+          </div>
+          <span class="timeline-date">Chapter II</span>
+          <h3>The Random Conversations</h3>
+          <p>"From random conversations to conversations we never wanted to end."</p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 3 -->
+      <div class="timeline-item left" data-aos="fade-right">
+        <div class="timeline-content" style="background: #ffffff; padding: 20px; border-radius: 16px; box-shadow: 0 10px 30px rgba(74, 21, 37, 0.08); width: 100%; box-sizing: border-box; overflow: hidden;">
+          <div class="timeline-photo" style="width: 100%; height: auto; border-radius: 12px; overflow: hidden; margin-bottom: 15px; position: relative; background-color: #fceade;">
+            <img src="sakshi2.jpeg" alt="The Laughs" style="width: 100%; height: auto; object-fit: cover; object-position: center; display: block; border-radius: 12px;">
+          </div>
+          <span class="timeline-date">Chapter III</span>
+          <h3>The Laughs</h3>
+          <p>"Some of my favorite memories are the ones where we laughed at absolutely nothing."</p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 4 -->
+      <div class="timeline-item right" data-aos="fade-left">
+        <div class="timeline-content" style="background: #ffffff; padding: 20px; border-radius: 16px; box-shadow: 0 10px 30px rgba(74, 21, 37, 0.08); width: 100%;   box-sizing: border-box; overflow: hidden;">
+          <div class="timeline-photo" style="width: 100%; height: auto; border-radius: 12px; overflow: hidden; margin-bottom: 15px; position: relative; background-color: #fceade;">
+            <img src="sakshi4.jpeg" alt="The Comfort" style="width: 100%; height: auto; object-fit: cover; object-position: center; display: block; border-radius: 12px;">
+          </div>
+          <span class="timeline-date">Chapter IV</span>
+          <h3>The Comfort</h3>
+          <p>"Somehow you became the person I could talk to without explaining everything."</p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 5 -->
+      <div class="timeline-item left" data-aos="fade-right">
+       <div class="timeline-content" style="background: #ffffff; padding: 20px; border-radius: 16px; box-shadow: 0 10px 30px rgba(74, 21, 37, 0.08); width: 100%;   box-sizing: border-box; overflow: hidden;">
+          <div class="timeline-photo" style="width: 100%; height: auto; border-radius: 12px; overflow: hidden; margin-bottom: 15px; position: relative; background-color: #fceade;">
+            <img src="sakshi11.jpeg" alt="The Comfort" style="width: 100%; height: auto; object-fit: cover; object-position: center; display: block; border-radius: 12px;">
+          </div>
+          <span class="timeline-date">Today</span>
+          <h3>Celebrating You</h3>
+          <p>"And now, here we are... celebrating you, Sakshu, and every light you bring to the world."</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- 5. WHY YOU ARE MY COMFORT ZONE -->
+<section id="comfort-zone" class="section-padding">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <h2 class="section-title">Why You Feel Like Home 💖</h2>
+      <p class="section-subtitle">A few of the endless reasons why having you in my life means everything.</p>
+    </div>
+
+    <div class="cards-grid">
+
+      <!-- Card 2 -->
+<div class="comfort-card" data-aos="fade-up" data-aos-delay="200">
+  <div class="card-icon">
+    <i class="fa-solid fa-heart"></i>
+  </div>
+  <h3>Always Special 💖</h3>
+  <p>"No matter how many people come and go, you'll always have a very special place in my heart."</p>
+</div>
+      <!-- Card 2 -->
+      <div class="comfort-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="card-icon"><i class="fa-solid fa-face-grin-tears"></i></div>
+        <h3>Pure Laughter 😂</h3>
+        <p>"You turn even the most dull, ordinary moments into memories filled with uncontrollable laughter."</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="comfort-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+        <h3>Silent Connection 🤍</h3>
+        <p>"You have this superpower to read my mind and know what I'm feeling before I even say a word."</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="comfort-card" data-aos="fade-up" data-aos-delay="250">
+        <div class="card-icon"><i class="fa-solid fa-moon"></i></div>
+        <h3>Inner Peace 🌙</h3>
+        <p>"In a world full of noise and chaos, talking to you instantly brings calm to my mind."</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="comfort-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <h3>Instant Sunshine ✨</h3>
+        <p>"No matter how tough or bad my day is, your presence magically makes everything feel lighter."</p>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="comfort-card" data-aos="fade-up" data-aos-delay="350">
+        <div class="card-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
+        <h3>Unshakable Support 🛡️</h3>
+        <p>"Knowing you're in my corner gives me strength. You believe in me even when I forget to."</p>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="comfort-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-icon"><i class="fa-solid fa-box-archive"></i></div>
+        <h3>Endless Memories 📸</h3>
+        <p>"Every single moment spent with you becomes a precious memory I hold close to my heart."</p>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="comfort-card" data-aos="fade-up" data-aos-delay="450">
+        <div class="card-icon"><i class="fa-solid fa-infinity"></i></div>
+        <h3>Always & Forever ♾️</h3>
+        <p>"Seasons change and life moves fast, but my bond with you is something I'll cherish forever."</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- 6. PHOTO MEMORY GALLERY -->
+    <section id="gallery" class="section-padding">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">Sakshu's Memory Scrapbook</h2>
+        
+        <!-- Category Filter -->
+        <div class="gallery-filter" data-aos="fade-up">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="favorites">Favorite Moments</button>
+          <button class="filter-btn" data-filter="crazy">Crazy Us</button>
+          <button class="filter-btn" data-filter="beautiful">Beautiful You</button>
+        </div>
+
+        <!-- Polaroid Grid -->
+<div class="scrapbook-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 30px; width: 100%; box-sizing: border-box;">
+  
+  <!-- Item 1 -->
+  <div class="gallery-item favorites" data-aos="zoom-in" style="position: relative;">
+    <div class="tape" style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 20px; background: rgba(255, 255, 255, 0.6); box-shadow: 0 2px 5px rgba(0,0,0,0.05); z-index: 5;"></div>
+    <div class="polaroid-frame" onclick="openLightbox('sakshi7.jpeg', 'Best Memory Ever')" style="background: #ffffff; padding: 15px 15px 20px 15px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12); cursor: pointer; border-radius: 4px; box-sizing: border-box; transition: transform 0.3s ease;">
+      <div style="width: 100%; height: auto; overflow: hidden; background-color: #f4eee0; border-radius: 2px;">
+        <img src="sakshi7.jpeg" alt="Sakshu Memory 1" style="width: 100%; height: auto; object-fit: cover; object-position: center; display: block;">
+      </div>
+      <p class="handwritten-tag" style="font-family: 'Alex Brush', cursive, sans-serif; font-size: 1.6rem; text-align: center; margin-top: 12px; color: #4a1525;">Best Memory Ever ❤️</p>
+    </div>
+  </div>
+
+  <!-- Item 2 -->
+  <div class="gallery-item crazy" data-aos="zoom-in" data-aos-delay="100" style="position: relative;">
+    <div class="tape" style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 20px; background: rgba(255, 255, 255, 0.6); box-shadow: 0 2px 5px rgba(0,0,0,0.05); z-index: 5;"></div>
+    <div class="polaroid-frame" onclick="openLightbox('assets/photos/photo10.jpg', 'Unfiltered Laughs')" style="background: #ffffff; padding: 15px 15px 20px 15px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12); cursor: pointer; border-radius: 4px; box-sizing: border-box; transition: transform 0.3s ease;">
+      <div style="width: 100%; height: auto; overflow: hidden; background-color: #f4eee0; border-radius: 2px;">
+        <img src="sakshi13.jpeg" alt="Sakshu Memory 2" style="width: 100%; height: auto; object-fit: cover; object-position: center; display: block;">
+      </div>
+      <p class="handwritten-tag" style="font-family: 'Alex Brush', cursive, sans-serif; font-size: 1.6rem; text-align: center; margin-top: 12px; color: #4a1525;">Unfiltered Laughs 😂</p>
+    </div>
+  </div>
+
+  <!-- Item 3 -->
+  <div class="gallery-item beautiful" data-aos="zoom-in" data-aos-delay="200" style="position: relative;">
+    <div class="tape" style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 20px; background: rgba(255, 255, 255, 0.6); box-shadow: 0 2px 5px rgba(0,0,0,0.05); z-index: 5;"></div>
+    <div class="polaroid-frame" onclick="openLightbox('sakshi8.jpeg', 'Pure Elegance')" style="background: #ffffff; padding: 15px 15px 20px 15px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12); cursor: pointer; border-radius: 4px; box-sizing: border-box; transition: transform 0.3s ease;">
+      <div style="width: 100%; height: auto; overflow: hidden; background-color: #f4eee0; border-radius: 2px;">
+        <img src="sakshi8.jpeg" alt="Sakshu Memory 3" style="width: 100%; height: auto; object-fit: cover; object-position: center; display: block;">
+      </div>
+      <p class="handwritten-tag" style="font-family: 'Alex Brush', cursive, sans-serif; font-size: 1.6rem; text-align: center; margin-top: 12px; color: #4a1525;">Pure Elegance ✨</p>
+    </div>
+  </div>
+
+  <!-- Item 4 -->
+  <div class="gallery-item favorites" data-aos="zoom-in" data-aos-delay="300" style="position: relative;">
+    <div class="tape" style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 20px; background: rgba(255, 255, 255, 0.6); box-shadow: 0 2px 5px rgba(0,0,0,0.05); z-index: 5;"></div>
+    <div class="polaroid-frame" onclick="openLightbox('assets/photos/photo12.jpg', 'Core Memory')" style="background: #ffffff; padding: 15px 15px 20px 15px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12); cursor: pointer; border-radius: 4px; box-sizing: border-box; transition: transform 0.3s ease;">
+      <div style="width: 100%; height: auto; overflow: hidden; background-color: #f4eee0; border-radius: 2px;">
+        <img src="sakshi12.jpeg" alt="Sakshu Memory 4" style="width: 100%; height: auto; object-fit: cover; object-position: center; display: block;">
+      </div>
+      <p class="handwritten-tag" style="font-family: 'Alex Brush', cursive, sans-serif; font-size: 1.6rem; text-align: center; margin-top: 12px; color: #4a1525;">Core Memory 🌸</p>
+    </div>
+  </div>
+
+</div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <span class="lightbox-close">&times;</span>
+      <img id="lightbox-img" src="" alt="Enlarged View">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <!-- 7. A LETTER FOR YOU -->
+<section id="letter-section" class="section-padding">
+  <div class="container">
+    <div class="letter-container" data-aos="fade-up">
+      <div class="letter-stamp"><i class="fa-solid fa-heartbeat"></i></div>
+      <h2 class="letter-title">To My Dearest Sakshu 💌</h2>
+      <div class="letter-content">
+        <p class="letter-line">Some people enter your life quietly, but leave an impression so deep that you can never imagine your world without them.</p>
+        
+        <p class="letter-line">You came into my life and instantly made it brighter. You are that rare, genuine soul who listens without judgment, supports without conditions, and makes every heavy moment feel light just by being present.</p>
+        
+        <p class="letter-line">Thank you for all the shared laughs, the late-night talks, the silliness, and the unspoken understanding that we share. Thank you for staying true, for holding space for me, and for being my absolute safe space.</p>
+        
+        <p class="letter-line">No matter where life takes us or how fast time flies, my gratitude for having you will never fade.</p>
+        
+        <div class="letter-highlight">
+          "You aren't just a best friend, Sakshu...<br>
+          You are family, my comfort zone, and the place my heart feels at home." 💖✨
+        </div>
+        
+        <p class="letter-closing">Forever grateful for you,<br><span class="signature-name">With all my love ❤️</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- 8. FLOATING MUSIC PLAYER -->
+    <div id="floating-player" class="floating-player">
+      <div class="player-album-art">
+        <i class="fa-solid fa-music music-icon-spin"></i>
+      </div>
+      <div class="player-info">
+        <span class="song-title" id="song-title">Our Favorite Song</span>
+        <span class="song-status" id="song-status">Tap to Play</span>
+      </div>
+      <button class="player-btn" id="play-pause-btn"><i class="fa-solid fa-play"></i></button>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="bg-music" loop>
+      <source src="assets/music/our-song.mp3" type="audio/mpeg">
+      <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=cinematic-documentary-115669.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 9. THINGS I LOVE ABOUT YOU -->
+    <section id="love-bubbles" class="section-padding">
+      <div class="container text-center">
+        <h2 class="section-title" data-aos="fade-up">A Few Things I Love About You, Sakshu</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Click on any bubble to unleash a surprise!</p>
+
+        <div class="bubbles-wrapper">
+          <div class="bubble" onclick="popBubble(this)">Your smile 😊</div>
+          <div class="bubble" onclick="popBubble(this)">Your laugh 😂</div>
+          <div class="bubble" onclick="popBubble(this)">Your kindness 🤍</div>
+          <div class="bubble" onclick="popBubble(this)">Your craziness 🤪</div>
+          <div class="bubble" onclick="popBubble(this)">Your random messages 📱</div>
+          <div class="bubble" onclick="popBubble(this)">Your voice 🎵</div>
+          <div class="bubble" onclick="popBubble(this)">Your little habits ✨</div>
+          <div class="bubble" onclick="popBubble(this)">Your positivity 🌟</div>
+          <div class="bubble" onclick="popBubble(this)">The comfort you bring 🏡</div>
+          <div class="bubble" onclick="popBubble(this)">How you make people feel special ❤️</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. INTERACTIVE SURPRISE GIFT BOX -->
+    <section id="gift-section" class="section-padding">
+      <div class="container text-center">
+        <h2 class="section-title" data-aos="fade-up">There's still one more thing...</h2>
+
+        <div class="gift-container" data-aos="zoom-in">
+          <div class="gift-box" id="gift-box">
+            <div class="gift-lid"></div>
+            <div class="gift-body"></div>
+            <div class="gift-ribbon"></div>
+          </div>
+          <button id="open-gift-btn" class="magical-btn margin-top-2">
+            <span>🎁 Open Your Gift</span>
+          </button>
+        </div>
+
+        <div id="gift-modal" class="gift-modal-content hidden">
+          <h3>My biggest wish for you, Sakshu, is simple...</h3>
+          <div class="wish-list">
+            <p>🌸 I hope you always have reasons to smile.</p>
+            <p>✨ I hope you achieve everything you've dreamed of.</p>
+            <p>💖 I hope life gives you all the happiness you deserve.</p>
+            <p>🥺 And I hope, somehow, I get to be there for many of those moments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. BIRTHDAY COUNTDOWN / CELEBRATION -->
+    <section id="birthday-cake-section" class="section-padding">
+      <div class="container text-center">
+        <h2 class="section-title" data-aos="fade-up">Today Is All About You, Sakshu 🎂</h2>
+        <p class="section-subtitle" data-aos="fade-up">Make a wish and click the flame to blow out the candles!</p>
+
+        <div class="cake-container" data-aos="zoom-in">
+          <div class="cake">
+            <div class="plate"></div>
+            <div class="layer layer-bottom"></div>
+            <div class="layer layer-middle"></div>
+            <div class="layer layer-top"></div>
+            <div class="icing"></div>
+            <div class="drips"></div>
+            <!-- Interactive Candle -->
+            <div class="candle" id="candle" onclick="blowCandle()">
+              <div class="flame" id="flame"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="wish-message" class="wish-message hidden">
+          <h3 class="glow-text">Make a wish...</h3>
+          <h1 class="grand-title">Happy Birthday, <span class="friend-name">Sakshu</span> ❤️</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. FINAL CINEMATIC SECTION -->
+    <section id="cinematic-ending" class="cinematic-section">
+      <div class="cinematic-bg" style="background-image: url('sakshi.jpeg');"></div>
+      <div class="cinematic-overlay"></div>
+      
+      <div class="cinematic-text-box">
+        <p class="cine-line line-1">If I could give you one thing, Sakshu...</p>
+        <p class="cine-line line-2">I would give you the ability to see yourself through my eyes.</p>
+        <p class="cine-line line-3">Maybe then you'd understand...</p>
+        <p class="cine-line line-4 gold-highlight">How incredibly special you are to me. ❤️</p>
+        <h2 class="cine-final-title">Happy Birthday, <span class="friend-name">Sakshu</span></h2>
+        <p class="cine-sub">Always stay the beautiful person you are.</p>
+      </div>
+    </section>
+
+    <!-- 13. FINAL PHOTO + SIGNATURE -->
+    <section id="signature-section" class="section-padding text-center">
+      <div class="container">
+        <div class="final-photo-wrapper" data-aos="zoom-in">
+          <img src="both.jpeg" alt="Final Portrait" class="final-photo">
+        </div>
+        <div class="signature-box" data-aos="fade-up">
+          <p class="made-with">Made with love, memories & a lot of feelings ❤️</p>
+          <div class="handwritten-signature">— <span class="your-name">YOUR COMFORT ZONE</span></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- External JS Libraries -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
